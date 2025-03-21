@@ -23,7 +23,7 @@ header {
   justify-content: space-between;
   padding: 1rem;
   color: white;
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -58,7 +58,7 @@ nav {
   align-items: center;
   justify-content: space-between;
 
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -92,7 +92,7 @@ nav {
 
 .hero-section {
   display: flex;
-  width: 70%;
+  width: 60%;
   margin: auto;
   align-items: center;
   gap: 2rem;
@@ -140,7 +140,7 @@ nav {
 
 .partners {
   display: flex;
-  width: 70%;
+  width: 60%;
   margin: auto;
   align-items: center;
   padding: 2rem;
@@ -171,15 +171,23 @@ nav {
 .p-right {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 0.2rem;
 }
 
 .services {
   background-color: var(--primary-color);
+  padding: 2rem;
+  text-align: center;
 }
 
-.s-top-card {
+.services h2 {
+  font-size: 2rem;
+  color: white;
+}
+
+.s-top-card,
+.s-bottom-card {
   background-color: white;
   padding: 2rem;
   text-align: center;
@@ -189,15 +197,90 @@ nav {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.s-top {
+.s-top,
+.s-bottom {
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+
+.video-section {
+  height: 90vh;
+  width: 100%;
+}
+
+.video-section video {
+  object-fit: cover;
+}
+
+.e-commerce {
+  display: flex;
+  gap: 2rem;
+  width: 60%;
+  margin: 2rem auto 0 auto;
+  justify-content: flex-end;
+  text-transform: uppercase;
+  padding-top: 2rem;
+}
+
+.e-commerce h2 {
+  font-weight: 500;
+  padding: 1rem;
+}
+
+.e-commerce h2:nth-of-type(1) {
+  border: 1px solid lightgray;
+  border-bottom: 1px solid white;
+}
+
+.box {
+  width: 60%;
+  border: 1px solid lightgray;
+  padding: 1.4rem;
+  margin: auto;
+  margin-top: -1px;
+  margin-bottom: 2rem;
+}
+
+.x {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.x p {
+  font-size: 1.3rem;
+  color: rgb(71, 69, 69);
+}
+.x h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.android {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.a-text,
+.a-image {
+  width: 50%;
+}
+
+.a-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.a2 {
+  flex-direction: row-reverse;
 }
 @media (max-width: 1560px) {
   .my-header,
   .my-nav,
-  .hero-section {
+  .hero-sectiona {
     width: 85%;
   }
 }
@@ -207,6 +290,13 @@ nav {
   .hero-section,
   .partners {
     width: 95%;
+    margin: auto;
+  }
+
+  .x,
+  .e-commerce,
+  .box {
+    width: 80%;
   }
 }
 @media (max-width: 1150px) {
@@ -229,6 +319,38 @@ nav {
   }
   .p-left p {
     font-size: 1.1rem;
+  }
+
+  .box {
+    display: none;
+  }
+
+  .e-commerce {
+    flex-direction: column;
+  }
+
+  .e-commerce h2 {
+    border: 1px solid lightgray !important;
+  }
+
+  .android {
+    flex-direction: column;
+  }
+
+  .android img {
+    margin: auto;
+  }
+
+  .a-text,
+  .a-image,
+  .x {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .a2 {
+    flex-direction: column-reverse;
   }
 }
 
@@ -300,5 +422,16 @@ nav {
   }
   .p-right img {
     width: 100px;
+  }
+
+  .video-section {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 407px) {
+  .s-top-card,
+  .s-bottom-card {
+    width: 100%;
   }
 }
