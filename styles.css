@@ -277,11 +277,171 @@ nav {
 .a2 {
   flex-direction: row-reverse;
 }
+
+.operations {
+  background-color: var(--primary-color);
+  padding: 2rem;
+  color: white;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.customers {
+  text-align: center;
+  padding: 2rem;
+}
+
+.customers h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.customers p {
+  font-size: 1.2rem;
+  color: rgb(73, 71, 71);
+  margin-top: 0.5rem;
+}
+
+.images-flex {
+  display: flex;
+  width: 60%;
+  margin: 2rem auto;
+  gap: 1rem;
+}
+
+.highlight {
+  width: 60%;
+  margin: 2rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.highlight p,
+.highlight ol {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.demo-btn2 {
+  color: var(--primary-color);
+  background-color: white;
+  margin-top: 1rem;
+}
+
+.operations h2:nth-child(1) {
+  text-align: center;
+}
+
+.highlight ol,
+h2 {
+  margin-top: 2rem;
+}
+
+.h-text,
+.h-image {
+  width: 50%;
+}
+
+.blogs {
+  background-color: var(--primary-color);
+  padding: 2rem;
+}
+
+.blogs-top,
+.blogs-bottom {
+  display: flex;
+  width: 60%;
+  margin: 2rem auto;
+  gap: 2rem;
+}
+
+.b-card {
+  background-color: white;
+  border-radius: 70px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.b-text {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.b-footer {
+  padding: 0.5rem 2rem;
+  color: gray;
+}
+
+.b-card h3 {
+  color: rgb(45, 43, 43);
+}
+
+.blogs h2,
+h3 {
+  text-align: center;
+  color: white;
+}
+
+.blogs a {
+  color: var(--primary-color);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+}
+
+.contact {
+  padding: 2rem;
+}
+
+.contact form {
+  width: 60%;
+  margin: 2rem auto;
+}
+
+.contact form input,
+textarea {
+  width: 100%;
+  padding: 0.9rem;
+  margin: 0.2rem 0;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+}
+
+::placeholder {
+  color: rgb(163, 154, 154);
+  font-weight: 500;
+}
+
+.contact :where(h2, p) {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  color: rgb(63, 62, 62);
+}
+.contact p {
+  font-size: 1.2rem;
+  color: rgb(63, 62, 62);
+}
+
+.send-btn {
+  border-radius: 5px !important;
+  margin: auto;
+  display: block;
+}
+
 @media (max-width: 1560px) {
   .my-header,
   .my-nav,
   .hero-sectiona {
     width: 85%;
+  }
+
+  .blogs-top,
+  .blogs-bottom {
+    width: 80%;
   }
 }
 @media (max-width: 1290px) {
@@ -298,6 +458,10 @@ nav {
   .box {
     width: 80%;
   }
+
+  .highlight {
+    width: 80%;
+  }
 }
 @media (max-width: 1150px) {
   .menu-items {
@@ -310,6 +474,15 @@ nav {
 
   .hero-left h1 {
     font-size: 2rem;
+  }
+
+  .highlight {
+    width: 95%;
+  }
+
+  .blogs-bottom,
+  .blogs-top {
+    width: 95%;
   }
 }
 
@@ -352,6 +525,20 @@ nav {
   .a2 {
     flex-direction: column-reverse;
   }
+
+  .highlight {
+    flex-direction: column-reverse;
+  }
+
+  .h-text,
+  .h-image {
+    width: 70%;
+  }
+
+  .blogs-bottom,
+  .blogs-top {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 860px) {
@@ -372,6 +559,14 @@ nav {
 
   .demo-btn {
     align-self: center;
+  }
+
+  .images-flex {
+    width: 100%;
+  }
+
+  .img2 {
+    display: none;
   }
 }
 
@@ -426,6 +621,27 @@ nav {
 
   .video-section {
     height: 40vh;
+  }
+
+  .h-text,
+  .h-image {
+    width: 95%;
+  }
+
+  .contact h2 {
+    font-size: 1.5rem;
+  }
+  .contact p {
+    font-size: 1rem;
+  }
+
+  .contact form {
+    width: 100%;
+  }
+
+  .highlight ol,
+  .highlight p {
+    font-size: 1rem;
   }
 }
 
